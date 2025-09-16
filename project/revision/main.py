@@ -1,15 +1,5 @@
-from functions_utils import is_number_bigger_than_given, add_salt_to_list
-
-def main():
-    result = is_number_bigger_than_given(candidate_number=5)
-    print(result)
-
-    result = is_number_bigger_than_given(candidate_number=5, threshold=1)
-    print(result)
-
-    given_list = []
-    add_salt_to_list(given_list)
-    print(given_list)
+from hw_function_utils import multiply_nums
 
 if __name__ == "__main__":
-    main()
+    result = multiply_nums(5,  7)
+    print(f"Result: {result}")
