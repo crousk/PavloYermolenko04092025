@@ -1,4 +1,4 @@
-from project.revision.functions_utils import is_number_bigger_than_given
+from project.revision.functions_utils import is_number_bigger_than_given, get_ticket_price
 
 
 def test_is_number_bigger_than_given_1():
@@ -7,6 +7,17 @@ def test_is_number_bigger_than_given_1():
     expected_result = False
     assert result == expected_result
 
+def test_ticket_price_child():
+    assert get_ticket_price(5) == 0.0 # free
+
+def test_ticket_price_teenager():
+    assert get_ticket_price(10) == 50.0 # 50% discount
+
+def test_ticket_price_adult():
+    assert get_ticket_price(38) == 100.0 # full price
+
+def test_ticket_price_senior():
+    assert get_ticket_price(67) == 70.0 # 30% discount
 
 
 def test_1():
