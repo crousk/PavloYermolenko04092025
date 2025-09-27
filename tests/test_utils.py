@@ -1,5 +1,5 @@
 from project.revision.functions_utils import is_number_bigger_than_given, get_ticket_price
-
+from project.hw11_decorators.decorator import add, greet
 
 def test_is_number_bigger_than_given_1():
     given_number = 5
@@ -19,6 +19,8 @@ def test_ticket_price_adult():
 def test_ticket_price_senior():
     assert get_ticket_price(67) == 70.0 # 30% discount
 
+def test_add():
+    assert add(1, 6) == {"result": 7}
 
-def test_1():
-    pass
+def test_greet():
+    assert greet("Pavlo") == {"result": "Hi, Pavlo!"}
