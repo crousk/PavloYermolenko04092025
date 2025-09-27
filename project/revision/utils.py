@@ -45,3 +45,6 @@ def fahrenheit_to_celsius(fahrenheit: float) -> float:
     return (fahrenheit - 32) * 5 / 9
 
 print(round(fahrenheit_to_celsius(79), 2))
+
+
+
