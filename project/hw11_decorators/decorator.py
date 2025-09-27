@@ -12,7 +12,7 @@ def add(a, b):
 
 @as_dict
 def greet(name):
-    return f"Hello, {name}!"
+    return f"Hi, {name}!"
 
 
 print(add(1, 6))
