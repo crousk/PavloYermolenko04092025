@@ -13,4 +13,4 @@ def divide_with_rounding(a, b):
     return a / b
 
 
-print(divide(1, 3))
+print(divide_with_rounding(1, 3))
