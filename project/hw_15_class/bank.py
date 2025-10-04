@@ -36,8 +36,8 @@ class Library:
             for book in self.books:
                 print(f"  {book}")
 
-book2 = Book("Harry Potter and the Goblet of Fire", "J. K. Rowling")
 book1 = Book("Book for removing", "me")
+book2 = Book("Harry Potter and the Goblet of Fire", "J. K. Rowling")
 book3 = Book("1984", "George Orwell")
 
 library = Library("Бібліотека книг")
@@ -46,7 +46,7 @@ library.add_book(book1)
 library.add_book(book2)
 library.add_book(book3)
 
-library.remove_book(book3.book_id)
+library.remove_book(book1.book_id)
 
 library.show_books()
 
