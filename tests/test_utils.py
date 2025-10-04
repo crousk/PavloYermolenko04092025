@@ -1,6 +1,6 @@
 from project.revision.functions_utils import is_number_bigger_than_given, get_ticket_price
 from project.hw11_decorators.decorator import add, greet
-from project.hw12.decorator_with_options import divide_with_rounding
+from project.hw12.decorator_with_options import divide_with_rounding, addition_with_rounding
 
 # def test_is_number_bigger_than_given_1():
 #     given_number = 5
@@ -29,3 +29,8 @@ from project.hw12.decorator_with_options import divide_with_rounding
 
 def test_divide_with_rounding():
     assert divide_with_rounding(1, 3) == 0.33
+
+
+def test_addition_with_rounding():
+    assert addition_with_rounding(2, 3.333333) == 5.333
+
