@@ -22,7 +22,7 @@ class Library:
 
     def remove_book(self, book_id: str):
         for book in self.books:
-            if book_id == book_id:
+            if book.book_id == book_id:
                 self.books.remove(book)
                 print(f"Книгу '{book.title}' було видалено з бібліотеки '{self.name}'.")
                 return
